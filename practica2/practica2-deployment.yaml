@@ -17,9 +17,3 @@ spec:
       containers:
       - name: practica2
         image: enriquedsc2021/practica2:final
-        resources:
-          requests:
-            cpu: 100m
-            memory: 100Mi
-        ports:
-        - containerPort: 80
