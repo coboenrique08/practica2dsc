@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: practica2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+        app: practica2
+  template:
+    metadata:
+      labels:
+        app: practica2
+    spec:
+      containers:
+      - name: practica2
+        image: enriquedsc2021/practica2
