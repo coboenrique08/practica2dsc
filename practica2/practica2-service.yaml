@@ -8,6 +8,8 @@ spec:
   type: LoadBalancer
   ports:
     # the port that this service should serve on
-  - port: 80
+  - protocol: TCP
+    port: 80
+    targetPort: 4567
   selector:
     app: practica2
